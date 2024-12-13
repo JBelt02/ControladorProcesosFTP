@@ -1,0 +1,18 @@
+# Usar un script de WinSCP para descargar un archivo
+option batch abort
+option confirm off
+
+# Conectar al servidor
+open ftp://sage200c:Ty*_q=G4!z2%1@sage200cprestashop.com
+
+# Cambiar al directorio remoto
+cd /web/000/
+
+# Descargar el archivo
+get 555.txt C:\Procesos\Archivos\
+
+# Cerrar la conexión
+close
+
+# Salir de WinSCP
+exit
